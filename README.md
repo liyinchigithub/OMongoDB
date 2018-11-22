@@ -156,17 +156,24 @@ Collection_name collection name
 ====V1.0.0 版本内容更新
 
 -------中文
+
 1. 新功能   创建数据库
+
 请求方法：POST
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/CreateDB/
+
 请求body：{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB3"
 }
 
 2. 新功能   创建集合
+
 请求方法：POST
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/CreateCollection/
+
 请求body：{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
@@ -174,8 +181,11 @@ Collection_name collection name
 }
 
 3. 新功能   删除数据库集合中的数据
+
 请求方法：DELETE
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/delete
+
 请求body：{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
@@ -187,8 +197,11 @@ Collection_name collection name
 }
 
 4. 新功能   删除集合
+
 请求方法：DELETE
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/drop
+
 请求body：{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
@@ -196,8 +209,11 @@ Collection_name collection name
 }
 
 5. 新功能   插入数据到数据库集合中
+
 请求方法：PUT
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/insert_data/
+
 请求body：{ 
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
@@ -209,8 +225,11 @@ Collection_name collection name
 }
 
 6. 新功能   查询数据库集合中的数据
+
 请求方法：POST
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/find
+
 请求body：{
 		"db_url":"mongodb://localhost:27017/",
 		"db_name":"Express_API_DB",
@@ -218,8 +237,13 @@ Collection_name collection name
 }
 
 7. 新功能   查询数据库集合中的数据
+
 请求方法：GET
+
 请求地址：http://127.0.0.1:8004/mongoDB_demo/find
+
 请求参数：
+
 db_name数据库名称
+
 collection_name集合名称

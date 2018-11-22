@@ -1,12 +1,22 @@
 ====Environment 环境依赖
 
-1."body-parser": "^1.18.3"
+1.安装配置node环境
 
-2."express": "^4.16.4"
+windows
+https://jingyan.baidu.com/article/1876c8529c79e2890b1376dd.html
 
-3."mongodb": "^3.1.10"
+mac
+https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
-4."multer": "^1.4.1"
+2.所运用到的依赖包
+
+"body-parser": "^1.18.3"
+
+"express": "^4.16.4"
+
+"mongodb": "^3.1.10"
+
+"multer": "^1.4.1"
 
 ====Deployment steps 部署步骤
 1. npm install  //Installation node operation environment 安装node运行环境

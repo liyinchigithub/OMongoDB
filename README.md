@@ -1,10 +1,11 @@
-
-
-
 ====Environment 环境依赖
-1."body-parser": "^1.18.3",
-2."express": "^4.16.4",
-3."mongodb": "^3.1.10",
+
+1."body-parser": "^1.18.3"
+
+2."express": "^4.16.4"
+
+3."mongodb": "^3.1.10"
+
 4."multer": "^1.4.1"
 
 ====Deployment steps 部署步骤

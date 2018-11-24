@@ -47,18 +47,7 @@ https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 -------中文
 
-1. 功能   创建数据库
-
-请求方法：POST
-
-请求地址：http://127.0.0.1:8004/mongoDB_demo/CreateDB/
-
-请求body：{
-	"db_url":"mongodb://localhost:27017/",
-	"db_name":"Express_API_DB3"
-}
-
-2. 功能   创建集合
+1. 功能   创建集合
 
 请求方法：POST
 
@@ -70,7 +59,7 @@ https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 	"collection_name":"Express_API_Collection1"
 }
 
-3. 功能   删除数据库集合中的数据
+2. 功能   删除数据库集合中的数据
 
 请求方法：DELETE
 
@@ -86,7 +75,7 @@ https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 		}
 }
 
-4. 功能   删除集合
+3. 功能   删除集合
 
 请求方法：DELETE
 
@@ -98,7 +87,7 @@ https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 	"collection_name":"Express_API_Collection5"
 }
 
-5. 功能   插入数据到数据库集合中
+4. 功能   插入数据到数据库集合中
 
 请求方法：PUT
 
@@ -114,7 +103,7 @@ https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 		}
 }
 
-6. 功能   查询数据库集合中的数据
+5. 功能   查询数据库集合中的数据
 
 请求方法：POST
 
@@ -126,7 +115,7 @@ https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 		"collection_name":"Express_API_Collection1"
 }
 
-7. 功能   查询数据库集合中的数据
+6 功能   查询数据库集合中的数据
 
 请求方法：GET
 
@@ -139,31 +128,16 @@ db_name数据库名称
 collection_name集合名称
 
 
-8.备注
+7.备注
 如果你的mongoDB设置了账号密码，url参数可以使用此格式：
 
-mongoose.connect('mongodb://账号:密码@localhost:27017/test');
+mongoose.connect('mongodb://账号:密码@localhost:27017/');
 
 ====V1.0.0 Version update
 
 -------English
 
-1. New features to create the database
-
-Request method: POST
-
-Request address: http://127.0.0.1:8004/mongoDB_demo/CreateDB/
-
-The request body: {
-
-"Db_url" : "mongo: / / localhost: 27017 /",
-
-Db_name: "Express_API_DB3"
-
-}
-
-
-2. New features to create collections
+1. New features to create collections
 
 Request method: POST
 
@@ -180,7 +154,7 @@ Db_name: "Express_API_DB",
 }
 
 
-3. The new function to delete data in a database collection
+2. The new function to delete data in a database collection
 
 Request method: DELETE
 
@@ -205,7 +179,7 @@ Db_name: "Express_API_DB",
 }
 
 
-4. The new feature collection
+3. The new feature collection
 
 Request method: DELETE
 
@@ -222,7 +196,7 @@ Db_name: "Express_API_DB",
 }
 
 
-5. New function to insert data to the database in the collection
+4. New function to insert data to the database in the collection
 
 Request method: PUT
 
@@ -247,7 +221,7 @@ Db_name: "Express_API_DB",
 }
 
 
-6. New functions query the database data in a collection
+5. New functions query the database data in a collection
 
 Request method: POST
 
@@ -264,7 +238,7 @@ Db_name: "Express_API_DB",
 }
 
 
-7. New functions query the database data in a collection
+6. New functions query the database data in a collection
 
 Request method: GET
 
@@ -276,9 +250,9 @@ Db_name database name
 
 Collection_name collection name
 
-8. Note
+7. Note
 
 If your mongoDB has set the account password, the url parameter can use this format:
 
-mongoose.connect('mongodb://账号:密码@localhost:27017/test');
+mongoose.connect('mongodb://username:password@localhost:27017/');
 

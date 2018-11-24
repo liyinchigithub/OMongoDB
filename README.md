@@ -139,6 +139,10 @@ db_name数据库名称
 collection_name集合名称
 
 
+8.备注
+如果你的mongoDB设置了账号密码，url参数可以使用此格式：
+mongoose.connect('mongodb://账号:密码@localhost:27017/test');
+
 ====V1.0.0 Version update
 
 -------English

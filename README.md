@@ -1,51 +1,42 @@
 【服务诞生原因】功能测试人员、开发人员均使用postman进行接口测试，但postman自身无法对mongoDB数据库进行操作，为了方便测试人员使用postman，进行接口自动化测试时，可以调用操作数据库清除测试数据，由此诞生express-mongodb-restfulAPI。
 
-![](http://thyrsi.com/t6/613/1542872374x1822611383.jpg)
+###使用方式
 
-====Version 版本
+如果你电脑已经安装配置Git、node环境，可以直接按下面步骤进行操作：
 
-V1.0.0
+1、从github拉取工程
 
-====Environment 环境依赖
+```
+git clone git@github.com:liyinchigithub/express-mysql-restfulAPI.git
+```
+2、切换到目录下
 
-1.安装配置node环境
+```
+cd express-mongodb-restfulAPI
+```
 
-windows
-https://jingyan.baidu.com/article/1876c8529c79e2890b1376dd.html
+3、安装依赖包
 
-mac
-https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
+```
+npm install
+```
 
-2.所运用到的依赖包
+4、启动OMongoDB服务
 
-"body-parser": "^1.18.3"
+```
+node server.js
+```
 
-"express": "^4.16.4"
+5、如果你的电脑还没有node环境，具体配置方法可以参考下面两个链接：
 
-"mongodb": "^3.1.10"
+windows https://jingyan.baidu.com/article/1876c8529c79e2890b1376dd.html
 
-"multer": "^1.4.1"
-
-====Deployment steps 部署步骤
-
-1. npm install  //Installation node operation environment 安装node运行环境
-
-2. npm server.js   //Start 启动
-
-#目录结构描述
-
-├── README.md                   // help
-
-├── server.js                   // server
-
-├── mongoDB_demo.js             // mongdb
+mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 
+##API接口文档
 
-
-====V1.0.0 版本内容更新
-
--------中文
+###中文
 
 1. 功能   创建集合
 
@@ -133,7 +124,8 @@ collection_name集合名称
 
 mongoose.connect('mongodb://账号:密码@localhost:27017/');
 
-====V1.0.0 Version update
+
+
 
 -------English
 

@@ -44,11 +44,14 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 请求地址：http://127.0.0.1:8004/mongoDB_demo/CreateCollection/
 
-请求body：{
+请求body：
+```
+{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
 	"collection_name":"Express_API_Collection1"
 }
+```
 
 2. 功能   删除数据库集合中的数据
 
@@ -56,7 +59,9 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 请求地址：http://127.0.0.1:8004/mongoDB_demo/delete
 
-请求body：{
+请求body：
+```
+{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
 	"collection_name":"Express_API_Collection1",
@@ -65,6 +70,7 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 			"name":"网易"			
 		}
 }
+```
 
 3. 功能   删除集合
 
@@ -72,11 +78,14 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 请求地址：http://127.0.0.1:8004/mongoDB_demo/drop
 
-请求body：{
+请求body：
+```
+{
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
 	"collection_name":"Express_API_Collection5"
 }
+```
 
 4. 功能   插入数据到数据库集合中
 
@@ -84,7 +93,9 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 请求地址：http://127.0.0.1:8004/mongoDB_demo/insert_data/
 
-请求body：{ 
+请求body：
+```
+{ 
 	"db_url":"mongodb://localhost:27017/",
 	"db_name":"Express_API_DB",
 	"collection_name":"Express_API_Collection1",
@@ -93,6 +104,7 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 		"url": "www.162.com"
 		}
 }
+```
 
 5. 功能   查询数据库集合中的数据
 
@@ -100,11 +112,14 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 
 请求地址：http://127.0.0.1:8004/mongoDB_demo/find
 
-请求body：{
+请求body：
+```
+{
 		"db_url":"mongodb://localhost:27017/",
 		"db_name":"Express_API_DB",
 		"collection_name":"Express_API_Collection1"
 }
+```
 
 6 功能   查询数据库集合中的数据
 
@@ -113,11 +128,11 @@ mac https://jingyan.baidu.com/article/6b1823098bdd9fba59e1597a.html
 请求地址：http://127.0.0.1:8004/mongoDB_demo/find
 
 请求参数：
-
+```
 db_name数据库名称
 
 collection_name集合名称
-
+```
 
 7.备注
 如果你的mongoDB设置了账号密码，url参数可以使用此格式：
@@ -135,7 +150,9 @@ Request method: POST
 
 Request address: http://127.0.0.1:8004/mongoDB_demo/CreateCollection/
 
-The request body: {
+The request body:
+```
+{
 
 "Db_url" : "mongo: / / localhost: 27017 /",
 
@@ -144,7 +161,7 @@ Db_name: "Express_API_DB",
 "Collection_name" : "Express_API_Collection1"
 
 }
-
+```
 
 2. The new function to delete data in a database collection
 
@@ -152,7 +169,9 @@ Request method: DELETE
 
 Request address: http://127.0.0.1:8004/mongoDB_demo/delete
 
-The request body: {
+The request body: 
+```
+{
 
 "Db_url" : "mongo: / / localhost: 27017 /",
 
@@ -169,7 +188,7 @@ Db_name: "Express_API_DB",
 }
 
 }
-
+```
 
 3. The new feature collection
 
@@ -177,7 +196,9 @@ Request method: DELETE
 
 Request address: http://127.0.0.1:8004/mongoDB_demo/drop
 
-The request body: {
+The request body:
+```
+{
 
 "Db_url" : "mongo: / / localhost: 27017 /",
 
@@ -186,7 +207,7 @@ Db_name: "Express_API_DB",
 "Collection_name" : "Express_API_Collection5"
 
 }
-
+```
 
 4. New function to insert data to the database in the collection
 
@@ -194,7 +215,9 @@ Request method: PUT
 
 Request address: http://127.0.0.1:8004/mongoDB_demo/insert_data/
 
-The request body: {
+The request body:
+```
+{
 
 "Db_url" : "mongo: / / localhost: 27017 /",
 
@@ -211,7 +234,7 @@ Db_name: "Express_API_DB",
 }
 
 }
-
+```
 
 5. New functions query the database data in a collection
 
@@ -219,7 +242,9 @@ Request method: POST
 
 Request address: http://127.0.0.1:8004/mongoDB_demo/find
 
-The request body: {
+The request body:
+```
+{
 
 "Db_url" : "mongo: / / localhost: 27017 /",
 
@@ -228,7 +253,7 @@ Db_name: "Express_API_DB",
 "Collection_name" : "Express_API_Collection1"
 
 }
-
+```
 
 6. New functions query the database data in a collection
 
@@ -237,10 +262,12 @@ Request method: GET
 Request address: http://127.0.0.1:8004/mongoDB_demo/find
 
 Request parameters:
+```
 
 Db_name database name
 
 Collection_name collection name
+```
 
 7. Note
 

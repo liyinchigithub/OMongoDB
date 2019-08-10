@@ -7,7 +7,7 @@
 1、从github拉取工程
 
 ```
-git clone git@github.com:liyinchigithub/express-mysql-restfulAPI.git
+git clone git@github.com:liyinchigithub/express-mongodb-restfulAPI.git
 ```
 2、切换到目录下
 

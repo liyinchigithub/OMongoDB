@@ -1,18 +1,23 @@
 【服务诞生原因】功能测试人员、开发人员均使用postman进行接口测试，但postman自身无法对mongoDB数据库进行操作，为了方便测试人员使用postman，进行接口自动化测试时，可以调用操作数据库清除测试数据，由此诞生express-mongodb-restfulAPI。
 
-###使用方式
+# 环境要求
+
+nodejs >8.X
+
+
+# 使用方式
 
 如果你电脑已经安装配置Git、node环境，可以直接按下面步骤进行操作：
 
 1、从github拉取工程
 
 ```
-git clone git@github.com:liyinchigithub/express-mongodb-restfulAPI.git
+git clone git@github.com:liyinchigithub/OMongoDB.git
 ```
 2、切换到目录下
 
 ```
-cd express-mongodb-restfulAPI
+cd OMongoDB
 ```
 
 3、安装依赖包

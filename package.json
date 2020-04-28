@@ -1,5 +1,5 @@
 {
-  "name": "express-mongodb-restfulapi",
+  "name": "omongodb",
   "version": "1.0.0",
   "description": "Using HTTP requests to realize mongo database operation",
   "main": "index.js",

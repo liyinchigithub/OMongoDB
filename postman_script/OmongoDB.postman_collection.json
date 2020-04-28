@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "51a5db1a-9a3a-4636-924f-d79cff477bf0",
+		"name": "OmongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Collection",
+			"item": [
+				{
+					"name": "创建集合",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"db_url\":\"mongodb://localhost:27017/\",\n\t\"db_name\":\"Express_API_DB\",\n\t\"collection_name\":\"Express_API_Collection\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8004/mongoDB_demo/CreateCollection",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8004",
+							"path": [
+								"mongoDB_demo",
+								"CreateCollection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除数据库集合中的数据",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"db_url\":\"mongodb://localhost:27017/\",\n\t\"db_name\":\"Express_API_DB\",\n\t\"collection_name\":\"Express_API_Collection\",\n\t\"whereStr\":\n\t\t{\n\t\t\t\"name\":\"网易\"\n\t\t\t\n\t\t}\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8004/mongoDB_demo/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8004",
+							"path": [
+								"mongoDB_demo",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除集合",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"db_url\":\"mongodb://localhost:27017/\",\n\t\"db_name\":\"Express_API_DB\",\n\t\"collection_name\":\"Express_API_Collection99\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8004/mongoDB_demo/drop",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8004",
+							"path": [
+								"mongoDB_demo",
+								"drop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "插入数据到数据库集合中",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "7e5b2dc8-46c0-428b-a118-67ddb634df5d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"db_url\":\"mongodb://localhost:27017/\",\n\t\"db_name\":\"Express_API_DB\",\n\t\"collection_name\":\"Express_API_Collection\",\n\t\"obj\":{\n\t\t\"name\": \"网易\",\n\t\t\"url\": \"www.162.com\"\n\t\t}\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8004/mongoDB_demo/insert_data/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8004",
+							"path": [
+								"mongoDB_demo",
+								"insert_data",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询数据库集合中的数据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\t\"db_url\":\"mongodb://localhost:27017/\",\n\t\t\"db_name\":\"Express_API_DB\",\n\t\t\"collection_name\":\"Express_API_Collection\"\n}\n"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8004/mongoDB_demo/find",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8004",
+							"path": [
+								"mongoDB_demo",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询数据库集合中的数据",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8004/mongoDB_demo/find/db_name/Express_API_DB/collection_name/Express_API_Collection",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8004",
+							"path": [
+								"mongoDB_demo",
+								"find",
+								"db_name",
+								"Express_API_DB",
+								"collection_name",
+								"Express_API_Collection"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
